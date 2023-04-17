@@ -5,8 +5,6 @@
 ***<center>![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</center>***
 
 
-<!-- <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">A Movie Search Application</h1> -->
-
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
 ### ✨ [Demo]()
@@ -18,8 +16,9 @@ A movie search app built with Flask using the OMDb API with CRUD and user authen
 # Features
 Here are the features in summary:
 
-* The App has a shelf that displays pre chosen movies
+* The App has a shelf where a user can use to check out the description of his/her chosen movies.
 * A user can search and see the description of any movie.
+* A user can add a movie to his/her favourite list to check out their description later at the time of need.
 
 # Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/).
