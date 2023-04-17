@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block title %}Favourites{% endblock %}
+
+{% block favourites %}
+    <div class="heading"><h1 style="color: #E8EDC8;">Your favourites</h1></div>
+    <!-- section 2 -->
+    
+ 
+    {% for x in favourite_list %}
+        <!-- <div class="dope" >
+            <div class="cardWrapper">
+                <img src="{{x.Poster}}" class="cardWrapper__Image" alt="...">
+                <div class="cardWrapper__Content">
+                    <h5 class="cardWrapper__Content__Title">{{x.Title}}</h5>
+                    <p class="cardWrapper__Content__Year">{{x.Year}}</p>
+                    <a href="{{url_for('views.movieDescription', title=x.Title)}}"><button class="cardWrapper__Content__Description">Check Out</button></a>
+                </div>
+            </div>
+        </div> -->
+        
+
+        <div class="favouriteWrapper">
+            <div class="favouriteWrapper__title">
+                <a href="{{url_for('views.movieDescription', title=x)}}" ><p class="">{{x}}</p></a>
+                <!-- <a href="{{url_for('views.movieDescription', title=x)}}" ><button class="button">Check out</button></a> -->
+                <!-- <button href="{{url_for('views.movieDescription', title=x)}}"class="">{{x}}</button> -->
+            </div>  
+            <div class="favouriteWrapper__button">
+                <a href="{{url_for('views.delete_from_list', title=x)}}" ><button class="" >Remove</button></a>
+            </div>
+        </div>
+
+    {% endfor %}
+    
+
+    
+
+{% endblock %}

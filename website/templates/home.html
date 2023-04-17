@@ -1,0 +1,120 @@
+{% extends "base.html" %} {% block title %}Emovies{% endblock %}
+
+{% block content %}
+
+    <!-- section 2 -->
+
+    <div class="grid__wrapper1">
+
+        <div class="grid__wrapper1__box">
+            <h1> What Kind of Movies <br> Do You Want ? <br> We Have Them !!! </h1>
+            <h2> The most secure and preference oriented movie searching website for your need.</h2>
+            <a href="/shelf" class="grid__wrapper2__box__shelf">
+                <button class="grid__wrapper1__box__shelf__button1">
+                    GO TO SHELF
+                </button>
+            </a>
+        </div>
+
+        <div class="grid__wrapper1__box">
+            <img class= "grid__wrapper1__box__image" src="{{url_for('static', filename='Images/Grid12.jpg')}}" alt="">
+        </div>
+    </div>
+
+    <div class="grid__wrapper2">
+        
+        <div class="grid__wrapper2__box">
+            <img class= "grid__wrapper2__box__image" src="{{url_for('static', filename='Images/Grid13.jpg')}}" alt="">
+        </div>
+
+        <div class="grid__wrapper2__box">
+            <h1> All Movie Genres Are Available ! </h1>
+            <h2> Starting from the breathtaking romantic movies to mind numbing suspense action movies. 
+                A little in detail from what we have are, Romance,  Fantasy, Science Fiction, 
+                Action & Adventure, Mystery, Horror, Thriller & Suspense, Children’s, Religion & Spirituality..... are available !
+            </h2>
+            <a href="/genres" class="grid__wrapper2__box__genres">
+                <button class="grid__wrapper2__box__genres__button2">
+                    VIEW OUR GENRES
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- section 3 -->
+
+    <div class="recentlyAddedBooks__grid">
+        
+        <center><h1>RECENTLY ADDED MOVIES</h1></center>
+
+        <!-- <div class="recentlyAddedBooks__grid__wrapper">
+            <img src="{{url_for('static', filename='Images/1.jpeg')}}" alt="">
+            <img src="{{url_for('static', filename='Images/41.jpeg')}}" alt="">
+            <img src="{{url_for('static', filename='Images/4.jpeg')}}" alt="">
+            <img src="{{url_for('static', filename='Images/42.jpeg')}}" alt="">
+        </div>  -->
+        
+        <div class="row">
+            {% for x in movies.Search %}
+                
+                <!-- {{ loop.index }} -->
+                <div class="col-sm dope recentlyAddedBooks__grid__wrapper2">
+                    <div class="card" style="width: 10rem">
+                        <a href="{{url_for('views.movieDescription', title=x.Title)}}"><img src="{{x.Poster}}" alt="..." class="card-img-top"></a>
+                    </div>
+                </div>
+                
+            
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <!-- section 4 -->
+
+    <div class="testimonials__grid">
+
+        <center><h1>TESTIMONIALS</h1></center>
+
+        <h2>Read What Others <br> Have To Say</h2>
+
+        <div class="testimonials__grid__wrapper">
+        
+            <div class="testimonials__grid__wrapper__box">
+                <div class= "testimonials__grid__wrapper__box__image">
+                    <img src="{{url_for('static', filename='Images/pic.PNG')}}" alt="">
+                </div>
+                <div class="testimonials__grid__wrapper__box__header">CRSTIANO RONALDO</div>
+                <div class="testimonials__grid__wrapper__box__subheadline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea molestiae, sed autem facere velit assumenda, culpa iusto cumque saepe amet laborum cum est atque nihil voluptas impedit illum dolorum.</div>    
+            </div>
+
+
+            <div class="testimonials__grid__wrapper__box">
+                <div class= "testimonials__grid__wrapper__box__image">
+                    <img src="{{url_for('static', filename='Images/pic.PNG')}}" alt="">
+                </div>
+                <div class="testimonials__grid__wrapper__box__header">CRSTIANO RONALDO</div>
+                <div class="testimonials__grid__wrapper__box__subheadline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea molestiae, sed autem facere velit assumenda, culpa iusto cumque saepe amet laborum cum est atque nihil voluptas impedit illum dolorum.</div>
+            </div>
+
+            <div class="testimonials__grid__wrapper__box">
+                <div class= "testimonials__grid__wrapper__box__image">
+                    <img src="{{url_for('static', filename='Images/pic.PNG')}}" alt="">
+                </div>
+                <div class="testimonials__grid__wrapper__box__header">CRSTIANO RONALDO</div>
+                <div class="testimonials__grid__wrapper__box__subheadline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea molestiae, sed autem facere velit assumenda, culpa iusto cumque saepe amet laborum cum est atque nihil voluptas impedit illum dolorum.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- section 5 -->
+
+    <div class="lastSection">
+
+        <marquee behavior="" direction="right">E<span class="lastSection__subscript">Movies</span> &nbsp; &nbsp; &nbsp; &nbsp; E<span class="lastSection__subscript">Movies</span> &nbsp; &nbsp; &nbsp; &nbsp; E<span class="lastSection__subscript">Movies</span></marquee>
+    </div>
+
+
+
+{% endblock %}

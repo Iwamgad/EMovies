@@ -1,0 +1,36 @@
+.descriptionWrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 500px;
+
+    &__Image {
+        padding-left: 50px;
+
+        img {
+            height: 500px;
+            border: solid 2px #5a4810;
+            border-radius: 30px;
+        }
+    }
+    
+    &__Content{
+        color: rgba(239, 225, 95, 0.675);
+        padding-top: 0px;
+        padding-left: 50px;
+        
+
+        &__Text {
+            font-size: 18px;
+        }
+
+        Button {
+            background-color: #111A39;
+            border: solid 2px #ffd102;
+            border-radius: 30px;
+            width: 600px;
+            margin-top: 20px;
+            color: #E8EDC8;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.login {
+    padding-top: 20px;
+    padding-bottom: 800px;
+    padding-left: 40px;
+    font-family: Black Ops One;
+
+    &__heading {
+        color: #E8EDC8;
+        font-family: Black Ops One;
+        padding-bottom: 10px;
+    }
+
+    &__subHeading {
+        color: #E8EDC8;
+        font-family: Black Ops One;
+        padding-bottom: 30px;
+    }
+
+    &__email {
+        color: #E8EDC8;
+        font-family: $fontPrimary;
+        padding-bottom: 40px;
+
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px white inset !important;
+        }
+
+        
+        &__input[type=email]{
+            background: rgba(84, 84, 237, 0.1);
+            color: #E8EDC8;
+            width: 750px;
+            padding: 10px;   
+            border: solid 2px;
+            border-radius: 30px;
+            border-color: #d4b021;
+            
+        } 
+        &__input::placeholder{
+            color: #E8EDC8;
+            opacity: 1;
+        }
+
+        #email:-webkit-autofill {
+            background-color: #FAFFBD !important;
+        }
+    }
+
+    &__password {
+        font-family: $fontPrimary;
+        padding-bottom: 40px;
+        
+        &__input[type=password]{
+            background: rgba(84, 84, 237, 0.1);
+            color: #E8EDC8;
+            width: 750px;
+            padding: 10px; 
+            border: solid 2px;
+            border-radius: 30px;
+            border-color: #d4b021;
+        }
+
+        &__input::placeholder{
+            color: #E8EDC8;
+            opacity: 1;
+        }
+    }
+
+
+    &__button {
+        background-color: rgba(84, 84, 237, 0.1);
+        color: #E8EDC8;
+        border: solid 2px;
+        border-radius: 30px;
+        border-color:  #d4b021;
+        font-family: $fontPrimary;
+        padding: 10px 20px;
+        transition: border-color 0.8s ;
+    }  
+
+    &__button:hover {
+        border-color: #E8EDC8; 
+    }
+}
+
+
+
+

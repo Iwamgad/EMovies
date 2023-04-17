@@ -1,0 +1,68 @@
+{% extends "base.html" %} {% block title %}Shelf{% endblock %}
+
+{% block shelf %}
+<!-- <div class="heading"><h1 style="color: #E8EDC8; font-family: 'Bai Jamjuree', sans-serif;">Shelf</h1></div> -->
+    <!-- section 2 -->
+    <!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li class="alert alert-danger">{{message}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %} -->
+
+    <!-- {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+                {% for category, message in messages %}
+                    {% if category == 'error' %}
+                        <div class="alertDangerShelf" role="alert">
+                            <center>{{message}}</center>
+                            
+                           
+                        </div>
+
+                    {% else %}
+
+                        <div class="alertSuccessShelf" role="alert">
+                            <center>{{message}}</center>
+                            
+                        </div>
+                        
+                    {% endif %}
+                {% endfor %}
+            {% endif %}     
+        {% endwith %} -->
+
+    {% for x in movies.Search %}
+        <!-- <div class="dope" >
+            <div class="cardWrapper">
+                <img src="{{x.Poster}}" class="cardWrapper__Image" alt="...">
+                <div class="cardWrapper__Content">
+                    <h5 class="cardWrapper__Content__Title">{{x.Title}}</h5>
+                    <p class="cardWrapper__Content__Year">{{x.Year}}</p>
+                    <a href="{{url_for('views.movieDescription', title=x.Title)}}"><button class="cardWrapper__Content__Description">Check Out</button></a>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-sm dope">
+            <div class="card" style="width: 10rem">
+                <a href="{{url_for('views.movieDescription', title=x.Title)}}" ><img src="{{x.Poster}}" alt="..." class="card-img-top"></a>
+                
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{x.Title}}</h5>
+                <p class="card-text">{{x.Year}}</p>
+                
+            </div>
+            <!-- <a href="{{url_for('views.movieDescription', title=x.Title)}}" ><button class="button">Check out</button></a> -->
+        </div>
+
+    {% endfor %}
+    
+
+    
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Shelf{% endblock %}
+
+{% block shelf %}
+    <!-- <h1>Results ... </h1> -->
+
+    {% for x in movies.Search %}
+        <div class="col-sm dope">
+            <div class="card" style="width: 10rem">
+                <a href="{{url_for('views.movieDescription', title=x.Title)}}" > <img src="{{x.Poster}}" alt="..." class="card-img-top"></a>
+                
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">{{x.Title}}</h5>
+                <p class="card-text">{{x.Year}}</p>
+                
+            </div>
+        </div>
+
+    {% endfor %}
+    
+
+    
+
+{% endblock %}

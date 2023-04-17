@@ -1,0 +1,36 @@
+.heading {
+    padding-left: 24px;
+
+    h1 {
+        color: $fontColor;
+        font-family: Black Ops One;
+    }
+}
+
+.subHeading {
+    padding-left: 24px;
+    padding-bottom: 20px;
+
+    h2 {
+        color: $fontColor;
+        font-family: Black Ops One;
+    }
+}
+
+
+.genresPad {
+    // display: grid;
+    // grid-gap: 10px;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // repeat(auto-fill, minmax(300px, 1fr));
+    font-family: $fontPrimary;
+    color: $fontColor;
+    width: 1200px;
+    height: 1000px;
+    margin: auto;
+    background-color: rgba(10, 25, 65, 0.918);
+    border: solid 2px #ebcd38;
+    border-radius: 30px;
+    padding: 20px 0px 0px 20px;
+
+}

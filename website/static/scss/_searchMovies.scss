@@ -1,0 +1,64 @@
+.search {
+    
+
+    &__heading {
+        color: #E8EDC8;
+        font-family: Black Ops One;
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        font-family: $fontPrimary;
+        padding-bottom: 40px;
+
+        &__input{
+            background: rgba(84, 84, 237, 0.1);
+            color: #E8EDC8;
+            width: 750px;
+            padding: 10px;   
+            border: solid 2px;
+            border-radius: 30px;
+            border-color: rgba(184, 174, 36, 0.2);
+        }
+
+        &__input::placeholder{
+            color: #E8EDC8;
+            opacity: 1;
+        }
+    }
+
+    &__year {
+        font-family: $fontPrimary;
+        padding-bottom: 40px;
+        
+        &__input[type=number]{
+            background: rgba(84, 84, 237, 0.1);
+            color: #E8EDC8;
+            width: 750px;
+            padding: 10px; 
+            border: solid 2px;
+            border-radius: 30px;
+            border-color: rgba(184, 174, 36, 0.2);
+        }
+
+        &__input::placeholder{
+            color: #E8EDC8;
+            opacity: 1;
+        }
+    }
+
+    &__button{
+        background-color: rgba(84, 84, 237, 0.1);
+        color: #E8EDC8;
+        border: solid 2px;
+        border-radius: 30px;
+        border-color:  rgba(184, 174, 36, 0.2);
+        font-family: $fontPrimary;
+        padding: 10px 20px;
+        transition: border-color 0.8s ;
+    }
+
+    &__button:hover{
+        border-color: #E8EDC8;
+    }
+}

@@ -1,0 +1,174 @@
+.Nav {
+
+    font-family: $fontPrimary;
+    padding-bottom: 40px;
+   
+
+    &__list {
+
+        display: flex;
+        list-style: none;
+        font-size: 30px;
+        padding-left: 20px;
+    
+        
+        &__logo {
+            width: 300px;
+            height: 100px;
+            padding-top: 25px;
+            border: solid 2px;
+            border-radius: 20px;
+            border-color: rgba(2, 2, 2, 0);
+            background-color: transparent;
+            
+            
+            @include breakpoint(medium) {
+                width: 350px;
+                padding-right: 40px;
+                padding-left: 45px;
+                padding-top: 20px;
+                padding-bottom: 20px;  
+            }  
+        }
+    
+        &__push {
+            margin-left: auto;
+            display: flex;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 45px;
+            padding-left: 45px;
+
+            &__hover::after {
+                content: '';
+                width: 0%;
+                height: 1.5px;
+                background: $underLinksColor;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+
+            &__hover:hover::after {
+                width: 100%;
+            }
+
+            &__form {
+               
+                color: #E8EDC8;
+                 
+                font-family: Black Ops One;
+            
+                &__Search[type=text] {
+                    width: 250px;
+                    height: 45px;
+                    font-size: 25px;
+                    color: #E8EDC8;
+                    background: rgba(84, 84, 237, 0.1);
+                    border: solid 2px #bdb110fd;
+                    border-radius: 30px;  
+                    text-align: center;
+                }
+                &__button {
+                    color: #E8EDC8;
+                    background: rgba(84, 84, 237, 0.02);
+                    border: solid 2px #58410a00;
+                    border-radius: 30px;  
+                    img {
+                        width: 30px;
+                    }
+                }
+                
+                
+            }
+
+            // Menu
+            &__dropdown {
+                position: relative;
+                display: inline-block;
+                
+                img{
+                    width: 50px;
+                }
+                
+            
+                &__menu::after {
+                    content: '';
+                    width: 0%;
+                    height: 1.5px;
+                    background: $underLinksColor;
+                    display: block;
+                    margin: auto;
+                    transition: 0.7s;
+                }
+    
+                &__menu:hover::after {
+                    width: 100%;
+                }
+    
+               
+                &__content{
+                    display: none;
+                    position: absolute;
+                    background-color: $fontColor;
+                    min-width: 100px;
+                    box-shadow: 0px 0px 1px 0px $dropDownContentBoxShadowColor;
+                    z-index: 1;
+                }
+    
+                &__content a {
+                    color: $fontColor;
+                    padding: 10px 16px;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;  
+                }
+    
+                &:hover &__content {
+                    display: block;
+                    background-color: $dropDownContentBoxColorBackground;    
+                }
+    
+                &__content a:hover {
+                    background-color: $dropDownContentOnHoverColor; 
+                }
+            }
+
+        }
+
+        
+
+        @include breakpoint(medium) {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill, 300px);
+        
+            &__push {
+                font-size: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            } 
+        }
+    }
+    
+    li {
+        padding: 20px;
+       
+        
+    }
+
+    a {
+        color: #e2e1d0;
+        text-decoration: none;
+        // #777503;
+    }   
+}
+
+
+
+        
+
+    
+

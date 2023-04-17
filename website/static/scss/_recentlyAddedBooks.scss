@@ -1,0 +1,47 @@
+.recentlyAddedBooks__grid {
+    font-family: $fontPrimary;
+    color: $fontColor;
+    padding-left: 25px;
+    padding-right: 20px;
+
+    h1 {
+        font-size: 15px;
+        text-align: center;
+        padding-top: 70px;
+        color: #E8EDC8;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding-left: 70px;
+        padding-top: 80px;
+        padding-bottom: 50px;
+
+        img {
+            transition: all 1s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+    // &__wrapper2 {
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    // }
+}
+.row {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    img {
+        transition: all 1s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+

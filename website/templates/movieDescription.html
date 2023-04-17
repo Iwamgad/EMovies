@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %}Description{% endblock %}
+
+{% block content %}
+    <h5 class="Title" style="color: #E8EDC8; font-family: Black Ops One; padding-left: 50px; font-size: 30px; ">{{movie.Title}}</h5>
+    
+    
+    
+    <div class="descriptionWrapper">
+        <div class="descriptionWrapper__Image">
+            <img src="{{movie.Poster}}" class="" alt="...">
+        </div>
+
+        <div class="descriptionWrapper__Content">
+            <p class="descriptionWrapper__Content__Text"><b>Year:</b> {{movie.Year}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Story Line:</b> {{movie.Plot}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Runtime:</b> {{movie.Runtime}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Release Date:</b> {{movie.Released}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Actors:</b> {{movie.Actors}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Director:</b> {{movie.Director}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Language:</b> {{movie.Language}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Country:</b> {{movie.Country}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Rating:</b> {{movie.imdbRating}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>Awards:</b> {{movie.Awards}}</p>
+            <p class="descriptionWrapper__Content__Text"><b>BoxOffice:</b> {{movie.BoxOffice}}</p>
+            <a href="{{url_for('views.add_to_favourite', title=movie.Title)}}" class="descriptionWrapper__Content__Button"><button>Add to favourites</button></a>
+        </div>
+        
+    </div>
+
+
+
+{% endblock %}

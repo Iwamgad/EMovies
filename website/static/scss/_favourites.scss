@@ -1,0 +1,48 @@
+.favouriteWrapper{
+    display: flex;
+    // gap: 500px;
+    
+    height: 50px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: rgb(7, 23, 77);
+    border: solid 2px #ddbc2a;
+    border-radius: 30px;
+    
+
+    a {
+        color: #e2e1d0;
+        text-decoration: none;
+    }
+
+    // .favouriteWrapper__button {
+    //     padding-left: 650px;
+    //     button{
+    //         border: solid 2px;
+    //     border-radius: 30px;
+    //     }
+        
+    // }
+    &__title{
+        width: 800px;
+        height: 30px;
+        text-align: left;
+        // padding: 10px;
+        // border: solid 2px  #fff;
+        p {
+            font-family: black ops one;
+            font-size: 20px;
+        }
+        // padding-right: 600px;
+    }
+    button{
+        color: #f3290a;
+        border: solid 1px #dac511;
+        border-radius: 30px;
+        background-color: #0c3068;
+    }
+    
+}

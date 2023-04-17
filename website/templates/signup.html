@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %}
+
+
+{% block content %}
+
+<form method="POST" class="signup">
+    <div class="signup__heading"><h1>Sign Up</h1></div>
+    <div class="signup__subHeading"><h3>Complete the form below to create a new Emovies account.</h3></div>
+    
+    <div class="signup__firstname">
+        <input type="text" class="signup__firstname__input" id="firstname" name="firstname" placeholder="First Name">
+    </div>
+
+    <div class="signup__lastname">
+        <input type="text" class="signup__lastname__input" id="lastname" name="lastname" placeholder="Last Name">
+    </div>
+
+    <div class="signup__email">
+        <input type="email" class="signup__email__input" id="email" name="email" placeholder="Email">
+    </div>
+
+    <div class="signup__createpassword">
+        <input type="password" class="signup__createpassword__input" id="createpassword" name="createpassword" placeholder="Create Password">
+    </div>
+
+    <div class="signup__confirmpassword">
+        <input type="password" class="signup__confirmpassword__input" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+
+            {% for category, message in messages %}
+                {% if category == 'error' %}
+                    <div class="alertDanger" role="alert">
+                        <center>{{message}}</center>
+                        
+                        <!-- <button type='button' class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+
+                {% else %}
+
+                    <div class="alertSuccess" role="alert">
+                        <center>{{message}}</center>
+                        <!-- <button type='button' class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+                    
+                {% endif %}
+            {% endfor %}
+        {% endif %}     
+    {% endwith %}
+    <br>
+        <button type="submit" class="signup__button">Sign Up</button>
+    <br>
+    <br><br><br><br><br><br><br><br>
+</form>
+
+
+
+
+{% endblock %}

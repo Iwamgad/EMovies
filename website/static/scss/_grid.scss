@@ -1,0 +1,112 @@
+.grid__wrapper1 {
+
+    font-family: $fontPrimary;
+    color: $fontColor;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-bottom: 150px;
+
+    &__box > img {
+        width: 625px;
+        height: 400px; 
+        opacity: 0.6; 
+        border: 0.1px;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+
+    h1 {
+       font-size: 50px;
+       font-weight: bold;
+       color:#E8EDC8; 
+       padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+        color:#E8EDC8;
+        padding-bottom: 50px;
+
+    }
+
+    &__box__shelf__button1 {
+        font-family: $fontPrimary;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        border: solid 2px #d4b021;
+        border-radius: 30px;
+        color: $fontColor;
+        background-color: $buttonOneColor;
+        padding: 20px 60px;
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        
+    }
+}
+
+.grid__wrapper2 {
+
+    font-family: $fontPrimary;
+    color: $fontColor;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-top: 30px;
+
+    &__box > img {
+        width: 625px;
+        height: 400px;
+        padding-left: 0;
+        padding-right: 80px;
+        opacity: 0.5; 
+        border: 0.1px;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color:#E8EDC8;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+        color:#E8EDC8;
+        padding-bottom: 50px; 
+    }
+
+    &__box__genres__button2 {
+        font-family: $fontPrimary;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        border: solid 2px #d4b021;
+        border-radius: 30px;
+        color: $fontColor;
+        background-color: $buttonOneColor;
+        padding: 20px 60px; 
+
+        a {
+            color: $fontColor;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+        }
+    }
+}
