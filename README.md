@@ -5,7 +5,7 @@
 ***<center>![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</center>***
 
 
-<h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">A Movie Search Application</h1>
+<!-- <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">A Movie Search Application</h1> -->
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
@@ -13,7 +13,7 @@
 
 
 ## <ins> Description </ins>
-A watch-list app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
+A movie search app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
 
 ## Features
 Here are the features in summary:
