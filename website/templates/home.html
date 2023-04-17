@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <!-- section 2 -->
+    <!-- section 1 -->
 
     <div class="grid__wrapper1">
 
@@ -41,23 +41,16 @@
         </div>
     </div>
 
-    <!-- section 3 -->
+    <!-- section 2 -->
 
     <div class="recentlyAddedBooks__grid">
         
         <center><h1>RECENTLY ADDED MOVIES</h1></center>
 
-        <!-- <div class="recentlyAddedBooks__grid__wrapper">
-            <img src="{{url_for('static', filename='Images/1.jpeg')}}" alt="">
-            <img src="{{url_for('static', filename='Images/41.jpeg')}}" alt="">
-            <img src="{{url_for('static', filename='Images/4.jpeg')}}" alt="">
-            <img src="{{url_for('static', filename='Images/42.jpeg')}}" alt="">
-        </div>  -->
         
         <div class="row">
             {% for x in movies.Search %}
                 
-                <!-- {{ loop.index }} -->
                 <div class="col-sm dope recentlyAddedBooks__grid__wrapper2">
                     <div class="card" style="width: 10rem">
                         <a href="{{url_for('views.movieDescription', title=x.Title)}}"><img src="{{x.Poster}}" alt="..." class="card-img-top"></a>
@@ -70,7 +63,7 @@
 
     </div>
 
-    <!-- section 4 -->
+    <!-- section 3 -->
 
     <div class="testimonials__grid">
 
@@ -108,7 +101,7 @@
         </div>
     </div>
 
-    <!-- section 5 -->
+    <!-- section 4 -->
 
     <div class="lastSection">
 

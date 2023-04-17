@@ -1,9 +1,9 @@
 {% extends "base.html" %} {% block title %}Shelf{% endblock %}
 
 {% block shelf %}
-    <!-- <h1>Results ... </h1> -->
 
     {% for x in movies.Search %}
+
         <div class="col-sm dope">
             <div class="card" style="width: 10rem">
                 <a href="{{url_for('views.movieDescription', title=x.Title)}}" > <img src="{{x.Poster}}" alt="..." class="card-img-top"></a>

@@ -54,7 +54,7 @@ def sign_up():
         elif len(createpassword) < 7:
             flash('Password is too short, it must be at least 7 characters', category='error')
         else:
-            # add user to database
+            # Adding the user to the database
             new_user = User (email=email, first_name=firstName, password=generate_password_hash(createpassword, method='sha256'))
             db.session.add(new_user)
             db.session.commit()

@@ -2,6 +2,7 @@
 
 
 {% block content %}
+
     <form autocomplete="off" method="POST" class="login ">
         <div class="login__heading"><h1>Log In</h1></div>
         <div class="login__subHeading" style="color:Black Ops One;"><h3>Please enter your email and password to access your Emovies account.</h3></div>
@@ -14,10 +15,6 @@
             <input type="password" class="login__password__input" id="password" name="password" placeholder="Password">
         </div>
 
-        <!-- <div class="login__checkbox">
-            <input type="checkbox" class="login__checkbox__input" id="checkbox" name="checkbox">
-            <h3>Remember me</h3>
-        </div> -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
 
