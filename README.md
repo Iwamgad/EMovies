@@ -33,7 +33,7 @@ Here is a run through of how to set up the application:
 * **Step 2** : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened.
 * **Step 3** : Make sure you have installed python and Flask web framework.
 * **Step 4** : Go to the [the movie database (OMDb) API](https://www.omdbapi.com/) WEBSITE, sign up for a free account and generate an API key. 
-    * Head to website folder and open the <ins>views.py</ins> file. Edit the API key inside all of the codes by your API keys.
+    * Head to website folder and open the <ins>views.py</ins> file. Edit the API key inside all of the codes by your API key.
 
 * **Step 5** : Run the <ins> app.py </ins>.
 
@@ -56,7 +56,6 @@ Here is a run through of how to set up the application:
 👤 **Dagmawi Ayneabeba Anduaelm**
 
 * Email: dagmawiharry2@gmail.com
-* Github: [Iwamgad](https://github.com/Iwamgad)
 * LinkedIn: [Dagmawi Andualem](https://www.linkedin.com/in/dagmawi-andualem-a03515240/)
 
 
