@@ -8,7 +8,7 @@
 
 ### ✨ [Demo]()
 
-##  A movie search application.
+#  A Movie Search Application.
 
 
 ### Description
