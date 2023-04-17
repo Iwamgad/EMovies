@@ -2,7 +2,7 @@
 
 
 
-***![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")***
+<!-- ***![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")*** -->
 <div align="center">
     <img src="/website/static/Images/EmoviesLogoFinal.png">
 </div>
