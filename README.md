@@ -2,7 +2,10 @@
 
 
 
-***<h1 style="text-align: center">![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</h1>***
+***![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")***
+<div align="center">
+    <img src="/website/static/Images/EmoviesLogoFinal.png">
+</div>
 
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
