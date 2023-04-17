@@ -12,20 +12,20 @@
 ### ✨ [Demo]()
 
 
-# <ins> Description </ins>
+# Description </ins>
 A movie search app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
 
-# <ins> Features
+# Features
 Here are the features in summary:
 
 * The App has a shelf that displays pre chosen movies
 * A user can search and see the description of any movie.
 
-# <ins> Requirements
+# Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/).
 * SQL Alchemy was used in this project as the database, however feal free to use whichever client you prefer.
 
-# <ins> Installation and Set-up
+# Installation and Set-up
 To view the app, open the link to a short demo on youtube.
 
 Here is a run through of how to set up the application:
@@ -39,10 +39,10 @@ Here is a run through of how to set up the application:
 
 * **Step 6** : Finally open your preferred browser and view the app by opening the link **http://127.0.0.1:5000/**.
 
-# <ins> Known Bugs
+# Known Bugs
 * **Styling bug**: There seems to be an inconsistent arrangement of movie thumbnails on landing page as well as search results page.
 
-# <ins> Technologies Used
+# Technologies Used
 * Python 3.10.7
 * Flask 2.2.2
 * HTML  
@@ -50,7 +50,6 @@ Here is a run through of how to set up the application:
 * Scss
 * Bootstrap 3.5.0
 * SQL Alchemy 
-*
 
 # Author
 
