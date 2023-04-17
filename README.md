@@ -11,7 +11,7 @@
 #  A Movie Search Application.
 
 
-## Description
+## <ins> Description </ins>
 A watch-list app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
 
 ## Features
