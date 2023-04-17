@@ -1,17 +1,19 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
 
 <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1>
+
+![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")
 <img class = "Nav__list__logo" src="{{url_for('static', filename='Images/EmoviesLogoFinal.png')}}" alt="Emovies">
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
 ### ✨ [Demo]()
 
-###  A movie watchlist application.
-![alt text](app.gif)
+##  A movie search application.
+
 
 ### Description
-A watch-list app built with Flask using the OMDB API with CRUD and user authentication. The application makes use of the movie database API (omdb).
+A watch-list app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
 
 ### Features
 Here are the features in summary:
