@@ -11,21 +11,22 @@
 #  A Movie Search Application.
 
 
-### Description
+## Description
 A watch-list app built with Flask using the OMDb API with CRUD and user authentication. The application makes use of the movie database API (omdb).
 
-### Features
+## Features
 Here are the features in summary:
-* App displays popular movies, upcoming movies and latest movies
-* User can search and review any movie.
 
-### Requirements
-* This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
-* PostgresSQL was used in this project as the database client, however fell free to use whichever cliet you prefer (this documentaion is based on Postgres)
-    * To download postgres, follow this [link](https://www.postgresql.org/download/)
+* The App has a shelf that displays pre chosen movies
+* A user can search and see the description of any movie.
+
+## Requirements
+* This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/).
+* SQL Alchemy was used in this project as the database, however feal free to use whichever client you prefer.
 
 ### Installation and Set-up
-To view the app, open the live site link provided below on the README.
+To view the app, open the link to a short demo on youtube.
+
 Here is a run through of how to set up the application:
 * **Step 1** : Clone this repository using **`git clone https://github.com/collinsmuriuki/flask-movie-app.git`**, or downloading a ZIP file of the code.
 * **Step 2** : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
