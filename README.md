@@ -1,11 +1,11 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
 
-<h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1>
+
 
 ***<center>![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</center>***
 
 
-#  A Movie Search Application
+<h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">A Movie Search Application</h1>
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
