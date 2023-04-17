@@ -2,9 +2,9 @@
 
 <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1>
 
-### 🏠 [Homepage](https://github.com/collinsmuriuki/flask-movie-app/)
+### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
-### ✨ [Demo](https://movie-app95.herokuapp.com/)
+### ✨ [Demo]()
 
 ###  A movie watchlist application.
 ![alt text](app.gif)
@@ -77,23 +77,22 @@ If you wish to deploy your app on heroku, you can follow the steps on this [gist
 * **Styling bug**: There seems to be an inconsistent arrangement of movie thumbnails on landing page as well as search results page.
 
 ## Technologies Used
-* Python 3.7.4
-* Flask 1.1.1
+* Python 3.10.7
+* Flask 2.2.2
 * HTML  
 * CSS
 * Scss
+* Bootstrap 3.5.0
 * SQL Alchemy 
-* Bootstrap 3.3.7
+*
 
 # Author
 
-👤 **Collins Muriuki**
+👤 **Dagmawi Ayneabeba Anduaelm**
 
-* Website: https://muriuki.dev
-* Email: murerwacollins@gmail.com
-* Twitter: [@collinsmuriuki_](https://twitter.com/collinsmuriuki_)
-* Github: [@collinsmuriuki](https://github.com/collinsmuriuki)
-* LinkedIn: [@collinsmuriuki](https://linkedin.com/in/collinsmuriuki)
+* Email: dagmawiharry2@gmail.com
+* Github: [Iwamgad](https://github.com/Iwamgad)
+* LinkedIn: [Dagmawi Andualem](https://www.linkedin.com/in/dagmawi-andualem-a03515240/)
 
 #
 
