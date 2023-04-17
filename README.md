@@ -3,7 +3,6 @@
 <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1>
 
 ![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")
-<img class = "Nav__list__logo" src="{{url_for('static', filename='Images/EmoviesLogoFinal.png')}}" alt="Emovies">
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
