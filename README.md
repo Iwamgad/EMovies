@@ -8,10 +8,8 @@
 
 ### ✨ [Demo]()
 
-***<p style="text-align: center; font-family: Black Ops One;font-size: 20px;">A Movie Search Application.</p>***
 
-
-#  A Movie Search Application.
+#  A Movie Search Application
 
 
 ## <ins> Description </ins>
