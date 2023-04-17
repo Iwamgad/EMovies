@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
 
-<h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1>
+<!-- <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1> -->
 
 ![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")
 
