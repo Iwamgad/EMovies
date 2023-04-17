@@ -52,7 +52,7 @@ Here is a run through of how to set up the application:
 * SQL Alchemy 
 *
 
-# <ins> Author
+# Author
 
 👤 **Dagmawi Ayneabeba Anduaelm**
 
@@ -60,7 +60,6 @@ Here is a run through of how to set up the application:
 * Github: [Iwamgad](https://github.com/Iwamgad)
 * LinkedIn: [Dagmawi Andualem](https://www.linkedin.com/in/dagmawi-andualem-a03515240/)
 
-#
 
 Copyright © 2023 [Dagmawi Ayneabeba Andualem](https://github.com/Iwamgad).<br />
 
