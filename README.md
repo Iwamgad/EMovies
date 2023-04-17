@@ -39,7 +39,7 @@ Here is a run through of how to set up the application:
 * **Step 6** : Finally open your preferred browser and view the app by opening the link **http://127.0.0.1:5000/**.
 
 # Known Bugs
-* **Styling bug**: There seems to be an inconsistent arrangement of movie thumbnails on landing page as well as search results page.
+* **Styling bug**: There seems to be an unattractive error message flashes once in a while while using the app.
 
 # Technologies Used
 * Python 3.10.7
