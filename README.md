@@ -2,11 +2,14 @@
 
 <!-- <h1 align="center" style = "font-family: Black Ops One;font-size: 40px;">EMovies</h1> -->
 
-![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")
+***<center>![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</center>***
 
 ### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
 ### ✨ [Demo]()
+
+***<p style="text-align: center; font-family: Black Ops One;font-size: 20px;">A Movie Search Application.</p>***
+
 
 #  A Movie Search Application.
 
