@@ -4,12 +4,14 @@
 
 ***<center>![Alt text](/website/static/Images/EmoviesLogoFinal.png "EMovies")</center>***
 
-### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
 
-### ✨ [Demo]()
 
 
 #  A Movie Search Application
+
+### 🏠 [Homepage](https://github.com/Iwamgad/EMovies)
+
+### ✨ [Demo]()
 
 
 ## <ins> Description </ins>
