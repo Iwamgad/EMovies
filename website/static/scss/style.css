@@ -1083,35 +1083,26 @@ title {
   padding: 20px 0px 0px 20px;
 }
 
-.alertDangerShelf {
-  color: rgba(221, 56, 11, 0.671);
-  border: 2px solid;
-  border-radius: 40px;
-  width: 600px;
-  height: 30px;
-  padding-bottom: 10px;
-  padding-top: 5px;
+.alertDanger {
+  width: 750px;
+  padding: 5px 20px;
   margin-left: 65px;
-  text-align: center;
+  font-family: black ops one;
 }
 
-.alertDangerShelf__message {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.alertDanger .messageDanger {
+  color: #ff2600;
 }
 
-.alertSuccessShelf {
-  color: rgba(251, 254, 55, 0.671);
-  border: 2px solid;
-  border-radius: 40px;
-  width: 600px;
-  height: 30px;
-  padding: 50px;
-  padding-bottom: 20px;
+.alertSuccess {
+  width: 750px;
+  padding: 5px 20px;
   margin-left: 65px;
-  text-align: center;
-  top: 50%;
+  font-family: black ops one;
+}
+
+.alertSuccess .messageSuccess {
+  color: #b28602;
 }
 
 .lastSection {
