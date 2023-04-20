@@ -1,86 +1,12 @@
 .lastSection {
     color: rgba(209, 192, 37, 0.476);
-    // rgba(255, 196, 0, 0.99);
     font-family:Black Ops One;
     font-size: 100px;
-    // text-align: center;
     height: 50px;
     padding-bottom: 20px;
     margin-bottom: 100px;
+
     &__subscript{
         font-size: 80px;
     }
 }
-
-
-// .img-slider {
-//     position: relative;
-//     width: 100vw;
-//     height: 800px;
-// }
-
-// .img-slider .slider-container {
-//     position: absolute;
-//     width: 300%;
-//     top: 0;
-//     left: 0;
-//     overflow: hidden;
-//     animation: slider 26s infinite;
-// }
-
-// .img-slider .slider-container .slide {
-//     position: relative;
-//     width: 1200px;
-//     height: 815px;
-//     float: left;
-//     overflow: hidden;
-//     border: solid 2px #ffcc003e;
-// }
-
-// .img-slider .slider-container .slide img {
-//   display: block;
-//   width: 1500px;
-//   height: 1000px;
-// }
-
-
-// @keyframes slider {
-//     0%, 25%, 100%{left: 0}
-    
-//     30%, 55%{left: -100%}
-    
-//     60%, 85%{left: -200%}
-// }
-
-
-// body > img{display:none}
-// .container{
-//   width: 100px;
-//   height: 500px;
-//   &:before{
-//     display: block;
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 0;
-//     height: 200px;
-//     width: 400px;
-//     animation-name: example;
-//     animation-duration: 20s;
-//     animation-timing-function: linear;
-//     animation-iteration-count: infinite;
-//   }
-// }
-
-
-// @keyframes example {
-//     0%   {background-image: url('http://lorempixel.com/400/200/sports/2');}
-//   22%   {background-image: url('http://lorempixel.com/400/200/sports/2');}
-//     25%  {background-image: url('http://lorempixel.com/400/200/sports/3');}
-//    49%  {background-image: url('http://lorempixel.com/400/200/sports/3');}
-//     50%  {background-image: url('http://lorempixel.com/400/200/sports/6');}
-//   74%  {background-image: url('http://lorempixel.com/400/200/sports/6');}
-//     75% {background-image: url('http://lorempixel.com/400/200/sports/1');}
-//   100% {background-image: url('http://lorempixel.com/400/200/sports/1');}
-// }

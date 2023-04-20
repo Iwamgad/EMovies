@@ -1,41 +1,4 @@
-// .alertDangerShelf{
-//     color: rgba(221, 56, 11, 0.671);
-//     border: 2px solid;
-//     border-radius: 40px;
-//     width: 600px;
-//     height: 30px;
-//     padding-bottom: 10px;
-//     padding-top: 5px;
-//     margin-left: 65px;
-//     text-align: center;
-    
-//     &__message {
-//         justify-content: center;
-    
-//     }
-// }
-
-// .alertSuccessShelf {
-//     color: rgba(251, 254, 55, 0.671);
-//     border: 2px solid;
-//     border-radius: 40px;
-//     width: 600px;
-//     height: 30px;
-//     // padding: 50px;
-//     padding-bottom: 5px;
-//     margin-left: 65px;
-//     text-align: center;
-//     top: 50%;
-//     // &__message {
-//     //     justify-content: center;
-//     //     padding-bottom: 10px;
-//     // }
-// }
-
 .alertDanger {
-    // color: rgba(184, 150, 36, 0.671);
-    // border: 2px solid;
-    // border-radius: 40px;
     width: 750px;
     padding: 5px 20px;
     margin-left: 65px;
@@ -46,9 +9,6 @@
 }
 
 .alertSuccess {
-    // color: rgba(184, 150, 36, 0.671);
-    // border: 2px solid;
-    // border-radius: 40px;
     width: 750px;
     padding: 5px 20px;  
     margin-left: 65px; 

@@ -39,7 +39,6 @@
                             <a href="{{url_for('views.favourite_list')}}">Favourites</a>
                             <a href="#aboutId">About</a>
                             <a href="/logout">Log Out</a>
-                            <a href="/favourites">Favourites2</a>
                         </div>
                     </div>    
                 {% else %}
@@ -79,6 +78,7 @@
             {% endfor %}
         {% endif %}     
     {% endwith %}
+
     <!-- section 2 -->
     
     {% block content %}
@@ -100,12 +100,6 @@
 
 
     {% block favourites %}
-
-    {% endblock %}
-
-
-
-    {% block results %}
 
     {% endblock %}
 

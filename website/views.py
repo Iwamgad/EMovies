@@ -58,21 +58,20 @@ def favourite_list():
 def search_by_title_two(title):
     data = requests.get("https://www.omdbapi.com/?i=tt3896198&apikey=11fcd31b&s=" + title)
     movies = data.json()
-    return render_template("favourite.html", user=current_user, movies=movies)
+    return render_template("favourites.html", user=current_user, movies=movies)
 
-favourite_list = []
+
 @views.route('add_to_favourite/<title>')
 def add_to_favourite(title):
-    # favourite_list = {}
-    # if "favourite" in session:
-    #     favourite_list = session.get("favourite") 
-    # else:
-    #     session["favourite"] = {}
-    # favourite_list[title] = title
-    # session["favourite"] = favourite_list
-    # flash("Added to favourites list !")
-    # favourite_list = []
-    favourite_list.append(title)
+    favourite_list = {}
+    if "favourite" in session:
+        favourite_list = session.get("favourite") 
+    else:
+        session["favourite"] = {}
+    favourite_list[title] = title
+    session["favourite"] = favourite_list
+    flash("Added to favourites list !")
+    favourite_list = []
     return redirect(url_for("views.shelf"))
 
 
@@ -82,31 +81,3 @@ def delete_from_list(title):
     favourite_list.pop(title, None)
     session["favourite"] = favourite_list
     return redirect(url_for("views.favourite_list"))
-
-
-# @views.route('/favourites', methods=['GET', 'POST'])
-# @login_required
-# def favourites():
-#     if request.method == 'POST':
-#         note = request.form.get('note')
-#         n_ote = Note(data=note, user_id=current_user.id)
-#         db.session.add(n_ote)
-#         db.session.commit()
-#         flash('Note added !', category='success')
-#     return render_template("favourites.html", user=current_user)
-
-@views.route('/favourites')
-@login_required
-def favourites():
-    
-    # if request.method == 'GET':
-        
-    movieTitle = favourite_list[-1]
-    title = Favourites(title=movieTitle, user_id=current_user.id)
-    db.session.add(title)
-    db.session.commit() 
-    # favourite_list.append("movieTitle")
-
-        
-    flash('Favourite Movie Added !', category='success')
-    return render_template("favourites.html", user=current_user)
