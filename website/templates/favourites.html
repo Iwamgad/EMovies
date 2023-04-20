@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Favourites{% endblock %}
+
+{% block content %}
+    <div class="heading"><h1 style="color: #E8EDC8;">Your favourites</h1></div>
+    
+    <div class="favouriteWrapperTwo">
+        {% for favourites in user.favourites %}
+            <div class="favouriteWrapperTwo__title">
+                <a href="{{url_for('views.movieDescription', title=favourites.title)}}" >{{favourites.title}}</a>
+            </div>
+            <!-- <div class="favouriteWrapperTwo__button">
+                <a href="{{url_for('views.delete_from_list', title=favourites.title)}}" ><button class="" >Remove</button></a>
+            </div> -->
+        {% endfor%}
+    </div>
+    
+    <!-- <form action="" class="" method="GET">
+        <textarea name="note" id="note" class="form-control"></textarea>
+        <br>
+        <div align="center">
+            <button type="submit" class="btn btn-primary">Add Note</button>
+        </div>
+    </form> -->
+    
+{% endblock %}

@@ -1155,4 +1155,38 @@ title {
   border-radius: 30px;
   background-color: #0c3068;
 }
+
+.favouriteWrapperTwo {
+  width: 800px;
+  padding: 10px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: #07174d;
+  border: solid 2px #ddbc2a;
+  border-radius: 30px;
+}
+
+.favouriteWrapperTwo__title {
+  width: 800px;
+  height: 30px;
+  text-align: left;
+}
+
+.favouriteWrapperTwo__title p {
+  font-family: black ops one;
+  font-size: 20px;
+}
+
+.favouriteWrapperTwo__title a {
+  color: #e2e1d0;
+  text-decoration: none;
+}
+
+.favouriteWrapperTwo button {
+  color: #f3290a;
+  border: solid 1px #dac511;
+  border-radius: 30px;
+  background-color: #0c3068;
+}
 /*# sourceMappingURL=style.css.map */

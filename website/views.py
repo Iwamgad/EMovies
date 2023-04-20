@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, url_for, request, session, redirect, flash
 from flask_login import login_required, current_user
 import requests
+from .models import Favourites
+from . import db
 
 views = Blueprint('views', __name__)
 
@@ -11,12 +13,14 @@ def home():
     movies = data.json()
     return render_template("home.html", user=current_user, movies=movies)
 
+
 @views.route('/shelf')
 @login_required
 def shelf():
     data = requests.get("https://www.omdbapi.com/?i=tt3896198&apikey=11fcd31b&s=avengers")
     movies = data.json()
     return render_template("shelf.html", user=current_user, movies=movies)
+
 
 @views.route('/genres')
 def geners():
@@ -56,17 +60,21 @@ def search_by_title_two(title):
     movies = data.json()
     return render_template("favourite.html", user=current_user, movies=movies)
 
+favourite_list = []
 @views.route('add_to_favourite/<title>')
 def add_to_favourite(title):
-    favourite_list = {}
-    if "favourite" in session:
-        favourite_list = session.get("favourite") 
-    else:
-        session["favourite"] = {}
-    favourite_list[title] = title
-    session["favourite"] = favourite_list
-    flash("Added to favourites list !")
+    # favourite_list = {}
+    # if "favourite" in session:
+    #     favourite_list = session.get("favourite") 
+    # else:
+    #     session["favourite"] = {}
+    # favourite_list[title] = title
+    # session["favourite"] = favourite_list
+    # flash("Added to favourites list !")
+    # favourite_list = []
+    favourite_list.append(title)
     return redirect(url_for("views.shelf"))
+
 
 @views.route('/delete_from_list/<title>')
 def delete_from_list(title):
@@ -75,3 +83,30 @@ def delete_from_list(title):
     session["favourite"] = favourite_list
     return redirect(url_for("views.favourite_list"))
 
+
+# @views.route('/favourites', methods=['GET', 'POST'])
+# @login_required
+# def favourites():
+#     if request.method == 'POST':
+#         note = request.form.get('note')
+#         n_ote = Note(data=note, user_id=current_user.id)
+#         db.session.add(n_ote)
+#         db.session.commit()
+#         flash('Note added !', category='success')
+#     return render_template("favourites.html", user=current_user)
+
+@views.route('/favourites')
+@login_required
+def favourites():
+    
+    # if request.method == 'GET':
+        
+    movieTitle = favourite_list[-1]
+    title = Favourites(title=movieTitle, user_id=current_user.id)
+    db.session.add(title)
+    db.session.commit() 
+    # favourite_list.append("movieTitle")
+
+        
+    flash('Favourite Movie Added !', category='success')
+    return render_template("favourites.html", user=current_user)
