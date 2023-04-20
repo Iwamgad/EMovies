@@ -52,7 +52,7 @@ def favourite_list():
         flash("The favourite list is empty !")
         return redirect(url_for("views.shelf"))
     else:
-        return render_template("favourite.html", user=current_user, favourite_list=favourite_list)
+        return render_template("favourites.html", user=current_user, favourite_list=favourite_list)
 
 
 def search_by_title_two(title):
