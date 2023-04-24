@@ -54,12 +54,6 @@ def favourite_list():
         return render_template("favourites.html", user=current_user, favourite_list=favourite_list)
 
 
-def search_by_title_two(title):
-    data = requests.get("https://www.omdbapi.com/?i=tt3896198&apikey=11fcd31b&s=" + title)
-    movies = data.json()
-    return render_template("favourites.html", user=current_user, movies=movies)
-
-
 @views.route('add_to_favourite/<title>')
 def add_to_favourite(title):
     favourite_list = {}
