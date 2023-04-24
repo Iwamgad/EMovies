@@ -9,22 +9,3 @@ $dropDownContentBoxColorBackground: rgba(101, 101, 105, 0.3);
 $dropDownContentOnHoverColor: rgba(99, 99, 51, 0.4);
 $buttonOneColor:rgba(9, 61, 95, 0.76);
 $buttonTwoColor:rgba(2, 5, 8, 0.908);
-
-
-
-//Media Queries 
-
-$breakpoints: (
-    least: 0px,
-    medium: 600px,
-    large: 1446px,
-    xlarge: 1300px
-);
-
-@mixin breakpoint($size){
-    $breakpoint_value: map-get($breakpoints , $size);
-
-    @media screen and (max-width: $breakpoint_value) {
-        @content; 
-    }
-}
