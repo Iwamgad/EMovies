@@ -16,7 +16,7 @@ def home():
 @views.route('/shelf')
 @login_required
 def shelf():
-    data = requests.get("https://www.omdbapi.com/?i=tt3896198&apikey=11fcd31b&s=avengers")
+    data = requests.get("https://www.omdbapi.com/?i=tt3896198&apikey=11fcd31b&s=harry")
     movies = data.json()
     return render_template("shelf.html", user=current_user, movies=movies)
 
