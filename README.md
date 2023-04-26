@@ -14,7 +14,7 @@
 
 
 # Description </ins>
-A movie search application built with Flask using the movie database OMDb API.
+A movie search web application built with Flask using the movie database OMDb API.
 
 # Features
 Here are the features in summary:
